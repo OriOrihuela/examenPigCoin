@@ -2,6 +2,11 @@ package org.lasencinas;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import java.security.KeyPair;
+
+
+
 import static org.junit.Assert.*;
 
 public class WalletTest {
@@ -9,21 +14,20 @@ public class WalletTest {
     private Wallet wallet = null;
 
     @Before
-    public void __init___() {
+    public void ___init___() {
         wallet = new Wallet();
     }
 
     @Test
-    public void getPrivKey() {
-        String expected = "456";
-        wallet.setPrivKey("456");
-        assertEquals(expected, wallet.getPrivKey());
+    public void constructorTest() {
+        assertNotNull(wallet);
     }
 
     @Test
-    public void getPublicKey() {
-        String expected = "123";
-        wallet.setPublicKey("123");
-        assertEquals(expected, wallet.getPublicKey());
+    public void getSK() {
+        Wallet wallet_1 = new Wallet();
+        KeyPair pair = GenSig.generateKeyPair();
+        wallet_1.setSK(pair.getPrivate());
+        wallet_1.setAddress(pair.getPublic());
     }
 }
