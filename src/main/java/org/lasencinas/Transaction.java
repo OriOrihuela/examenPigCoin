@@ -19,14 +19,13 @@ public class Transaction {
     public Transaction() {}
 
     public Transaction(String id, String prev_hash, PublicKey pKey_sender, PublicKey pKey_recipient, int pigCoins,
-                       String message, Byte[] signature) {
+                       String message) {
         this.id = id;
         this.prev_hash = prev_hash;
         this.pKey_sender = pKey_sender;
         this.pKey_recipient = pKey_recipient;
         this.pigCoins = pigCoins;
         this.message = message;
-        this.signature = signature;
     }
 
 
@@ -94,6 +93,11 @@ public class Transaction {
 
     @Override
     public String toString() {
-
+        return "\n" + "hash = " + getId() + "\n" +
+                "prev_hash = " + getPrev_hash() + "\n" +
+                "pk_sender = " + getpKey_sender() + "\n" +
+                "pk_recipient = " + getpKey_recipient() + "\n" +
+                "pigcoins = " + getPigCoins() + "\n" +
+                "message = " + getMessage() + "\n";
     }
 }
