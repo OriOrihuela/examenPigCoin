@@ -95,8 +95,8 @@ public class Transaction {
     public String toString() {
         return "\n" + "hash = " + getId() + "\n" +
                 "prev_hash = " + getPrev_hash() + "\n" +
-                "pk_sender = " + getpKey_sender() + "\n" +
-                "pk_recipient = " + getpKey_recipient() + "\n" +
+                "pk_sender = " + getpKey_sender().hashCode() + "\n" +
+                "pk_recipient = " + getpKey_recipient().hashCode() + "\n" +
                 "pigcoins = " + getPigCoins() + "\n" +
                 "message = " + getMessage() + "\n";
     }
