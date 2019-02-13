@@ -6,9 +6,7 @@ public class Wallet {
     private String privKey = null;
 
     /* ---- Constructor ---- */
-    public Wallet(String publicKey, String privKey) {
-        this.privKey = privKey;
-        this.publicKey = publicKey;
+    public Wallet() {
     }
 
     /* ---- Getters ---- */
