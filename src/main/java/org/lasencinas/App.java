@@ -1,7 +1,6 @@
-package org.lasencinas.app;
+package org.lasencinas;
 
 
-import org.lasencinas.*;
 import java.security.KeyPair;
 import java.util.Map;
 
