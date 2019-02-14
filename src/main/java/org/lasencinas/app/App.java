@@ -1,6 +1,9 @@
-package org.lasencinas;
+package org.lasencinas.app;
 
-
+import org.lasencinas.wallet.Wallet;
+import org.lasencinas.gensig.GenSig;
+import org.lasencinas.transaction.Transaction;
+import org.lasencinas.blockchain.BlockChain;
 import java.security.KeyPair;
 import java.util.Map;
 

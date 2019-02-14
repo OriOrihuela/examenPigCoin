@@ -1,5 +1,6 @@
-package org.lasencinas;
+package org.lasencinas.blockchain;
 
+import org.lasencinas.transaction.Transaction;
 import java.util.List;
 import java.util.LinkedList;
 

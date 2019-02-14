@@ -1,4 +1,4 @@
-package org.lasencinas;
+package org.lasencinas.transaction;
 
 import java.security.PublicKey;
 

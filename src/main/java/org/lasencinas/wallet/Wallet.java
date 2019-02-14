@@ -1,5 +1,6 @@
-package org.lasencinas;
+package org.lasencinas.wallet;
 
+import org.lasencinas.gensig.GenSig;
 import java.security.PrivateKey;
 import java.security.PublicKey;
 
