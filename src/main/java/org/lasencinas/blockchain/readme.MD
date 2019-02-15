@@ -1,50 +1,40 @@
-CLASE BLOCKCHAIN
+# CLASE BLOCKCHAIN
 
-ATRIBUTOS
+## ATRIBUTOS
 
-blockChain el blockchain lo componen las transacciones de pigcoins que han
+- *blockChain* el blockchain lo componen las transacciones de pigcoins que han
 realizado los propietarios de las wallets.
-•
 
-MÉTODOS
+## MÃ‰TODOS
 
-addOrigin(transaction) añade al blockchain una transacción que crea moneda. No
+- *addOrigin(transaction)* aÃ±ade al blockchain una transacciÃ³n que **crea moneda**. No
 se trata de transacciones entre wallets. Es el sistema el que genera pigcoins y se los
-envía a una wallet.
-•
+envÃ­a a una wallet.
 
-processTransactions(pKey_sender, pKey_recipient, consumedCoins, message
-signedTransaction) procesa las transacciones que las wallet envían. Añade las
-transacciones al blockchain cuando se ha verificado que su firma es auténtica y que los
+- *processTransactions(pKey_sender, pKey_recipient, consumedCoins, message
+signedTransaction)* procesa las transacciones que las wallet envÃ­an. AÃ±ade las
+transacciones al blockchain cuando se ha verificado que su firma es autÃ©ntica y que los
 pigcoins que utiliza no se han gastado antes (double spend).
-•
 
-isConsumedCoinValid(consumedCoins) verifica que los pigcoins que se intentan
-enviar en la transacción no se han gastado antes, es decir, que provienen de una
-transacción que no ha sido utilizada ya.
-•
+- *isConsumedCoinValid(consumedCoins)* verifica que los pigcoins que se intentan
+enviar en la transacciÃ³n no se han gastado antes, es decir, que provienen de una
+transacciÃ³n que no ha sido utilizada ya.
 
-isSignatureValid(pKey_sender, message, signedTransaction) verifica que la
-firma de la transacción es válida, utilizando la clave pública de la wallet que envía los
-•
+- *isSignatureValid(pKey_sender, message, signedTransaction)* verifica que la
+firma de la transacciÃ³n es vÃ¡lida, utilizando la clave pÃºblica de la wallet que envÃ­a los pigcoins.
 
-pigcoins.
-createTransaction(pKey_sender, pKey_recipient, consumedCoins, message,
-signedTransaction) añade al blockchain una transacción cuando todo es correcto.
-•
+- *createTransaction(pKey_sender, pKey_recipient, consumedCoins, message,
+signedTransaction)* aÃ±ade al blockchain una transacciÃ³n cuando todo es correcto.
 
-loadInputTransactions(PublicKey address) carga en la wallet las transacciones
-que tienen como destino esa dirección o clave pública.
-•
+- *loadInputTransactions(PublicKey address)* carga en la wallet las transacciones
+que tienen como destino esa direcciÃ³n o clave pÃºblica.
 
-loadOutputTransactions(PublicKey address) carga en la wallet las transacciones
-que tienen como origen esa dirección o clave pública.
-•
+- *loadOutputTransactions(PublicKey address)* carga en la wallet las transacciones
+que tienen como origen esa direcciÃ³n o clave pÃºblica.
 
-loadWallet(PublicKey address) carga en la wallet los pigcoins envidos y recibidos
-en esa dirección.
-•
+*loadWallet(PublicKey address)* carga en la wallet los pigcoins envidos y recibidos
+en esa direcciÃ³n.
 
-• summarize() visualiza el blockchain
-summarize(index) visualiza una transacción del blockchain situada en la posición
-index
+- *summarize()* visualiza el blockchain
+
+- *summarize(index)* visualiza una transacciÃ³n del blockchain situada en la posiciÃ³n index
