@@ -32,7 +32,7 @@ que tienen como destino esa dirección o clave pública.
 - *loadOutputTransactions(PublicKey address)* carga en la wallet las transacciones
 que tienen como origen esa dirección o clave pública.
 
-*loadWallet(PublicKey address)* carga en la wallet los pigcoins envidos y recibidos
+- *loadWallet(PublicKey address)* carga en la wallet los pigcoins envidos y recibidos
 en esa dirección.
 
 - *summarize()* visualiza el blockchain
