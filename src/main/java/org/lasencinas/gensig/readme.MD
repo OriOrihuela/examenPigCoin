@@ -1,6 +1,5 @@
-CLASE GENSIG
+# CLASE GENSIG
 
-Esta clase contiene las utilidades para generar el par de clave pública y privada, para firmar
-mensajes y para verificar que la firma de un mensaje es auténtica.
+### Esta clase contiene las utilidades para generar el par de clave pÃºblica y privada, para firmar mensajes y para verificar que la firma de un mensaje es autÃ©ntica.
 
-NO puedes modificar su código
+## **NO** puedes modificar su cÃ³digo
