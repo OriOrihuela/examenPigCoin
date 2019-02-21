@@ -1,36 +1,20 @@
-CLASE TRANSACTION
+# CLASE TRANSACTION
 
-Una transacción es una transferencia de pigcoins entre dos wallets.
+***Una transacciÃ³n es una transferencia de pigcoins entre dos wallets.***
 
-ATRIBUTOS
+## ATRIBUTOS
 
-• hash es el identificador de la transacción en el Blockchain.
-prev_hash es el identificador de la transacción previa donde se originaron los los
-pigcoins que ahora pretendes gastar.
-•
+- ```hash``` es el identificador de la transacciÃ³n en el Blockchain.
+- ```prev_hash``` es el identificador de la transacciÃ³n previa donde se originaron los pigcoins que ahora pretendes gastar.
+- ```PublicKey pKey_sender``` es **la direcciÃ³n pÃºblica** de la **wallet** desde la que se envÃ­an los pigcoins. Para nosotros es tambiÃ©n la **clave pÃºblica** de la Wallet.
+- ```PublicKey pKey_recipient``` es la **direcciÃ³n pÃºblica** de la **wallet** a la que se envÃ­an los
+pigcoins (el monedero que los recibe). Para nosotros es tambiÃ©n la **clave pÃºblica** de la Wallet.
+- ```pigcoins``` es la cantidad de pigcoins que se envÃ­an.
+- ```message``` es el mensaje que acompaÃ±a a la transacciÃ³n y que escribe el usuario/a que envÃ­a los pigcoins.
+- ```byte[] signature``` es el mensaje ```message``` firmado con la clave privada del usuario/a que genera (envÃ­a) la transacciÃ³n.
 
-PublicKey pKey_sender es la dirección pública de la wallet desde la que se envían
-los pigcoins. Para nosotros es también la clave pública de la Wallet.
-•
+# MÃ‰TODOS
 
-PublicKey pKey_recipient es la dirección pública de la wallet a la que se envían los
-pigcoins (el monedero que los recibe). Para nosotros es también la clave pública de la
-Wallet.
-•
+Esta clase no tiene lÃ³gica, sÃ³lo ```getters``` y ```setters```. Si programas las historias de usuario indicadas en ```App.java``` construirÃ¡s los getters y setters necesarios.
 
-• pigcoins es la cantidad de pigcoins que se envían.
-message es el mensaje que acompaña a la transacción y que escribe el usuario/a que
-envía los pigcoins.
-•
-
-byte[] signature es el mensaje message firmado con la clave privada del usuario/a
-que genera (envía) la transacción.
-•
-
-MÉTODOS
-
-Esta clase no tiene lógica, sólo getters y setters . Si programas las historias de usuario
-indicadas en App.java construirás los getters y setters necesarios.
-
-toString() devuelve la representación en String de un objeto de la clase
-Transaction .
+- ```toString()``` devuelve la representaciÃ³n en String de un objeto de la clase ```Transaction```.
